@@ -14,6 +14,8 @@ module.exports = {
       backgroundColor: {
         primary: {
           100: "#00A86B",
+          200: "#4D8C57",
+          300: "#74C365",
         },
       },
       borderColor: {
@@ -26,6 +28,8 @@ module.exports = {
       textColor: {
         primary: {
           100: "#00A86B",
+          200: "#4D8C57",
+          300: "#74C365",
         },
       },
       container: {

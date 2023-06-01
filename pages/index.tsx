@@ -5,20 +5,17 @@ import AboutMe from "../components/atoms/organisms/AboutMe";
 import Project from "../components/atoms/organisms/Project";
 import Contact from "../components/atoms/organisms/Contact";
 import Profile from "../components/atoms/atoms/Profile";
+import Footer from "../components/atoms/organisms/Footer";
 
 const index = () => {
   return (
     <>
       <Header />
-      <div className="grid gap-3 grid-cols-2 h-[100vh]">
-        <div className="relative">
-          <Profile />
-        </div>
-        {/* <Hero /> */}
-        {/* <Contact /> */}
-        {/* <Project /> */}
-        <AboutMe />
-      </div>
+      <Hero />
+      <AboutMe />
+      <Project />
+      <Contact />
+      <Footer />
     </>
   );
 };

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Cards from "../atoms/Cards";
+import SectionLayout from "./SectionLayout";
+import SectionTitle from "../atoms/SectionTitle";
 const Project = () => {
   const schema = [
     {
@@ -14,26 +16,29 @@ const Project = () => {
     },
   ];
   return (
-    <div className="flex gap-3 place-self-center">
-      {schema.map((input, i) => (
-        <div key={i}>
-          <div className="grid w-fit h-fit justify-start rounded-md shadow-lg p-3">
-            <div className="justify-center py-3 w-full h-20 place-self-center">
-              {input.logo}
-            </div>
-            <h3 className="font-bold text-2xl capitalize py-6">
-              {input.title}
-            </h3>
-            <p className="text-base">{input.text}</p>
-            <div className="flex gap-1 py-8">
-              <p className="font-md text-lg capitalize">Visit</p>
-              <div className="relative h-6 w-6 grid place-self-center">
-                <Image src="assets/arrow-right-up.svg" fill alt="arrow" />
+    <div className="md:px-52 md:pt-20 py-10 ">
+      <h3 className="text-2xl font-bold text-justify p-3">My Projects</h3>
+      <div className="grid grid-cols-1 p-5 md:grid-cols-2">
+        {schema.map((input, i) => (
+          <div key={i}>
+            <div className="grid w-fit h-fit justify-start rounded-md shadow-lg p-3">
+              <div className="justify-center py-3 w-full h-20 place-self-center">
+                {input.logo}
+              </div>
+              <h3 className="font-bold text-2xl capitalize py-6">
+                {input.title}
+              </h3>
+              <p className="text-base">{input.text}</p>
+              <div className="flex gap-1 py-8">
+                <p className="font-md text-lg capitalize">Visit</p>
+                <div className="relative h-6 w-6 grid place-self-center">
+                  <Image src="assets/arrow-right-up.svg" fill alt="arrow" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
