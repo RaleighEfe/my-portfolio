@@ -16,7 +16,12 @@ const Header = () => {
           <SectionTitle type="main">Raleigh Efe</SectionTitle>
         </div>
         <div className="flex gap-8 justify-self-end">
-          <Button type="filled" text="Download CV" onClick={handleDownloadCV} />
+          <Button
+            type="filled"
+            text="Download CV"
+            onClick={handleDownloadCV}
+            className="hidden md:block"
+          />
           <Button
             type="outlined"
             text="Contact Me"

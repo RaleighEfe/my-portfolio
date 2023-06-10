@@ -1,6 +1,4 @@
-import Cards from "../atoms/Cards";
-import SectionLayout from "./SectionLayout";
-import FaReact from "react-icons";
+import Carousel from "../atoms/Carousel";
 
 const AboutMe = () => {
   const data = [
@@ -40,7 +38,8 @@ const AboutMe = () => {
         laborum dolorum perferendis deleniti earum! Explicabo commodi, quas
         placeat minus eaque dolor consequatur voluptas, veritatis harum quis ab?
       </p>
-      <div className="grid grid-cols-3 gap-2">
+      <div className="container mx-auto flex gap-3">
+        <Carousel>
         {data.map((input, i) => (
           <div
             key={i}
@@ -52,6 +51,7 @@ const AboutMe = () => {
             </p>
           </div>
         ))}
+        </Carousel>
       </div>
     </div>
   );

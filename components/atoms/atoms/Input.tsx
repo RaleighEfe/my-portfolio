@@ -3,10 +3,10 @@ type inputProps = {
   placeholder?: string;
   id: string;
   value: string;
-  onChange: any;
+  setValue: any;
 };
 
-const Input = ({ type, placeholder }: inputProps) => {
+const Input = ({ type, placeholder, setValue }: inputProps) => {
   return (
     <>
       {(() => {
@@ -16,6 +16,7 @@ const Input = ({ type, placeholder }: inputProps) => {
               <textarea
                 className="p-3 bg-white border border-neutral-400 w-full h-40 resize-none rounded-lg"
                 placeholder={placeholder}
+                onChange={(e: any) => setValue(e.target.value)}
                 required
               ></textarea>
             );
@@ -26,6 +27,7 @@ const Input = ({ type, placeholder }: inputProps) => {
                 type={"text"}
                 placeholder={placeholder}
                 className="p-2 border border-neutral-400 rounded-lg w-full"
+                onChange={(e: any) => setValue(e.target.value)}
                 required
               />
             );

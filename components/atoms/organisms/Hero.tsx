@@ -4,14 +4,14 @@ import SectionLayout from "./SectionLayout";
 import Profile from "../atoms/Profile";
 
 const Hero = () => {
-   const handleAboutMe= () => {
-     window.location.href = "/path/to/your/file.pdf";
+  const handleAboutMe = () => {
+    window.location.href = "../AboutMe";
   };
-    const handleMyProject = () => {
-      window.location.href = "/path/to/your/file.pdf";
-    };
+  const handleMyProject = () => {
+    window.location.href = "/Project";
+  };
   return (
-    <div className="grid grid-rows-2 md:grid-cols-2">
+    <div className="grid md:grid-cols-2">
       <div className="relative w-full h-[550px]">
         <Profile />
       </div>
@@ -24,7 +24,7 @@ const Hero = () => {
         </p>
         <div className="flex gap-8">
           <Button text="About Me" type="filled" onClick={handleAboutMe} />
-          <Button text="My Project" type="outlined" onClick={handleMyProject}/>
+          <Button text="My Project" type="outlined" onClick={handleMyProject} />
         </div>
       </div>
     </div>

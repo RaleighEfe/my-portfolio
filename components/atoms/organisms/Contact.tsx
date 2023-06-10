@@ -1,6 +1,8 @@
 import Input from "../atoms/Input";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+// import SendMails from "../../../actions/sendMails";
 import axios from "axios";
+import SendMails from "../../../actions/SendMails";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -12,10 +14,10 @@ const Contact = () => {
     e.preventDefault();
 
     setIsSubmitting(true);
-
     try {
-      await axios.post("/api/contact", { name, email, message });
-      alert("Message sent successfully!");
+      SendMails({ name, email, message }).then((res: any) => {
+        console.log(res.message);
+      });
       setName("");
       setEmail("");
       setMessage("");
@@ -38,9 +40,7 @@ const Contact = () => {
           placeholder="Full Name"
           id="name"
           value={name}
-          onChange={(e: { target: { value: React.SetStateAction<string> } }) =>
-            setName(e.target.value)
-          }
+          setValue={setName}
         />
         <div className="py-5">
           <Input
@@ -48,10 +48,7 @@ const Contact = () => {
             placeholder="Your Email"
             id="email"
             value={email}
-            onChange={(e: {
-              target: { value: React.SetStateAction<string> };
-            }) => setEmail(e.target.value)}
-            // required
+            setValue={setEmail}
           />
         </div>
         <Input
@@ -59,9 +56,7 @@ const Contact = () => {
           placeholder="Message"
           id="message"
           value={message}
-          onChange={(e: { target: { value: React.SetStateAction<string> } }) =>
-            setMessage(e.target.value)
-          }
+          setValue={setMessage}
         />
         <div className="grid justify-self-end w-fit py-3">
           <button
