@@ -85,6 +85,7 @@ type CarouselProps = {
 // export default Carousel;
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+
 const Carousel = ({ children }: CarouselProps) => {
   return (
     <div>

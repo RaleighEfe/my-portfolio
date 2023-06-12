@@ -39,7 +39,7 @@ const AboutMe = () => {
         placeat minus eaque dolor consequatur voluptas, veritatis harum quis ab?
       </p>
       <div className="container mx-auto flex gap-3">
-        <Carousel>
+        {/* <Carousel> */}
         {data.map((input, i) => (
           <div
             key={i}
@@ -51,7 +51,7 @@ const AboutMe = () => {
             </p>
           </div>
         ))}
-        </Carousel>
+        {/* </Carousel> */}
       </div>
     </div>
   );
