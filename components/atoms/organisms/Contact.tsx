@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="grid place-self-center p-3 md:px-72 md:py-20">
+    <div className="grid place-self-center p-3 lg:px-72 lg:py-20 md:px-20">
       <h3 className="text-2xl font-bold text-justify">
         Lets Discuss your Project
       </h3>

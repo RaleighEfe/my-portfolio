@@ -6,6 +6,7 @@ import Project from "../components/atoms/organisms/Project";
 import Contact from "../components/atoms/organisms/Contact";
 import Profile from "../components/atoms/atoms/Profile";
 import Footer from "../components/atoms/organisms/Footer";
+import CardSlider from "../components/atoms/atoms/Carousel";
 
 const index = () => {
   return (
@@ -13,7 +14,8 @@ const index = () => {
       <Header />
       <Hero />
       <AboutMe />
-      <Project />
+      {/* <Project /> */}
+      <CardSlider />
       <Contact />
       <Footer />
     </>

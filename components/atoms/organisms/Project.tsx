@@ -16,11 +16,11 @@ const Project = () => {
     },
   ];
   return (
-    <div className="md:px-52 md:pt-20 py-10 ">
+    <div id="project" className="lg:px-52 lg:pt-20 py-10 ">
       <h3 className="text-2xl font-bold text-justify p-3">My Projects</h3>
-      <div className="grid grid-cols-1 p-5 md:grid-cols-2">
+      <div className="overflow-x-auto p-5">
         {schema.map((input, i) => (
-          <div key={i}>
+          <div key={i} className="">
             <div className="grid w-fit h-fit justify-start rounded-md shadow-lg p-3">
               <div className="justify-center py-3 w-full h-20 place-self-center">
                 {input.logo}

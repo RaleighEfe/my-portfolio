@@ -28,6 +28,9 @@
   "@sendgrid/mail": "^7.7.0",
   
     
+  "@swiper/core": "^0.0.21",
+  
+    
   "@types/node": "18.11.18",
   
     
@@ -70,6 +73,9 @@
   "react-ripples": "^2.2.1",
   
     
+  "react-scroll": "^1.8.9",
+  
+    
   "react-slick": "^0.29.0",
   
     
@@ -87,6 +93,9 @@
   
     
   "@types/nodemailer": "^6.4.8",
+  
+    
+  "@types/react-scroll": "^1.8.7",
   
     
   "autoprefixer": "^10.4.14",

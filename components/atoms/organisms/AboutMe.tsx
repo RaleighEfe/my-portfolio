@@ -1,9 +1,11 @@
 import Carousel from "../atoms/Carousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const AboutMe = () => {
   const data = [
     {
-      text: "Hmtl",
+      text: "HTML",
       icon: "",
     },
     {
@@ -14,17 +16,18 @@ const AboutMe = () => {
       text: "Javascript",
       icon: "",
     },
-    {
-      text: "React",
-      icon: "",
-    },
-    {
-      text: "Tailwind",
-      icon: "",
-    },
+    // {
+    //   text: "React",
+    //   icon: "",
+    // },
+    // {
+    //   text: "Tailwind",
+    //   icon: "",
+    // },
   ];
   return (
-    <div className="p-3 place-self-center md:px-52 py-10">
+    <div id="aboutMe" className="p-3 place-self-center lg:px-52 py-10">
+      <h3 className="text-2xl font-bold text-justify">About Me</h3>
       <p className="py-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo,
         exercitationem molestias reiciendis ex eaque ullam nemo labore
@@ -38,8 +41,16 @@ const AboutMe = () => {
         laborum dolorum perferendis deleniti earum! Explicabo commodi, quas
         placeat minus eaque dolor consequatur voluptas, veritatis harum quis ab?
       </p>
-      <div className="container mx-auto flex gap-3">
-        {/* <Carousel> */}
+      {/* <Swiper
+        spaceBetween={3}
+        slidesPerView={3}
+        loop={true}
+        autoplay={{
+          delay: 2000,
+        }}
+      >
+        <SwiperSlide> */}
+      <div className="flex gap-3">
         {data.map((input, i) => (
           <div
             key={i}
@@ -51,8 +62,9 @@ const AboutMe = () => {
             </p>
           </div>
         ))}
-        {/* </Carousel> */}
       </div>
+      {/* </SwiperSlide>
+      </Swiper> */}
     </div>
   );
 };

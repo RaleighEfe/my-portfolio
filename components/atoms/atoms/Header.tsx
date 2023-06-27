@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 
 const Header = () => {
   const handleDownloadCV = () => {
-    window.location.href = "/path/to/your/file.pdf";
+    window.location.href = "/Documents/aa/raleigh-efe";
   };
   const handleContactMe = () => {
     window.location.href = `mailto:${"raleighefe@gmail.com"}`;

@@ -1,15 +1,11 @@
 import Button from "../atoms/Button";
 import SectionTitle from "../atoms/SectionTitle";
+import React, { useRef } from "react";
 import SectionLayout from "./SectionLayout";
 import Profile from "../atoms/Profile";
+import { Link } from "react-scroll";
 
 const Hero = () => {
-  const handleAboutMe = () => {
-    window.location.href = "../AboutMe";
-  };
-  const handleMyProject = () => {
-    window.location.href = "/Project";
-  };
   return (
     <div className="grid md:grid-cols-2">
       <div className="relative w-full h-[550px]">
@@ -23,8 +19,28 @@ const Hero = () => {
           iste! Deleniti, est ratione! Facere error eius nulla itaque.
         </p>
         <div className="flex gap-8">
-          <Button text="About Me" type="filled" onClick={handleAboutMe} />
-          <Button text="My Project" type="outlined" onClick={handleMyProject} />
+          <Link
+            to="aboutMe"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="w-fit items-center justify-center rounded-md py-2 px-4 text-white bg-primary-100 "
+          >
+            About Me
+          </Link>
+          <Link
+            className="w-fit items-center justify-center rounded-md py-2 px-4 border border-primary-100 text-[#00A86B]"
+            to="project"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Project
+          </Link>
+          {/* <Button text="About Me" type="filled" onClick={handleAboutMe} /> */}
+          {/* <Button text="My Project" type="outlined" onClick={handleMyProject} /> */}
         </div>
       </div>
     </div>
