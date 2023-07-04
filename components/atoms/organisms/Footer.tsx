@@ -6,8 +6,8 @@ import Icons from "../atoms/Icons";
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-2 bg-[#00A86B]">
-      <div className="flex gap-3 py-5">
+    <div className="grid grid-cols-2 py-5 px-3">
+      <div className="flex gap-3">
         <div className="relative h-12 w-12">
           <Image src="assets/Email.svg" fill alt="email" />
         </div>
@@ -16,17 +16,31 @@ const Footer = () => {
           <Link href="">raleighefe@gmail.com</Link>
         </div>
       </div>
-      <div className="grid grid-cols-4  place-items-end content-center justify-end">
+      <div className="flex gap-5 place-items-end content-center justify-end">
         <Icons
           url="https://www.linkedin.com/in/efe-raleigh-674b8723b/"
-          iconType={<BsLinkedin />}
+          iconType="LinkedIn"
+          color="#00A86B"
+          size="30px"
         />
-        <Icons url="https://github.com/RaleighEfe" iconType={<BsGithub />} />
+        <Icons
+          url="https://github.com/RaleighEfe"
+          iconType="GitHub"
+          color="#00A86B"
+          size="30px"
+        />
         <Icons
           url="https://www.instagram.com/_hey_fey/"
-          iconType={<BsInstagram />}
+          iconType="Instagram"
+          color="#00A86B"
+          size="30px"
         />
-        <Icons url="https://twitter.com/EfeRaleigh" iconType={<BsTwitter />} />
+        <Icons
+          url="https://twitter.com/EfeRaleigh"
+          iconType="Twitter"
+          color="#00A86B"
+          size="30px"
+        />
       </div>
     </div>
   );
