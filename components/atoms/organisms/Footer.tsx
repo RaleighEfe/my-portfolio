@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-sm text-[#777777]">Send me an Email</p>
-          <Link href="">raleighefe@gmail.com</Link>
+          <Link href="mailto:raleighefe@mail.com">raleighefe@gmail.com</Link>
         </div>
       </div>
       <div className="flex gap-5 place-items-end content-center justify-end">
@@ -30,17 +30,17 @@ const Footer = () => {
           size="30px"
         />
         <Icons
-          url="https://www.instagram.com/_hey_fey/"
-          iconType="Instagram"
-          color="#00A86B"
-          size="30px"
-        />
-        <Icons
           url="https://twitter.com/EfeRaleigh"
           iconType="Twitter"
           color="#00A86B"
           size="30px"
         />
+        {/* <Icons
+          url="https://medium.com/@raleighefe"
+          iconType="Medium"
+          color="#00A86B"
+          size="30px"
+        /> */}
       </div>
     </div>
   );
