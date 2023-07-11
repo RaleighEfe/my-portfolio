@@ -2,7 +2,7 @@ import Input from "../atoms/Input";
 import React, { useEffect, useState } from "react";
 // import SendMails from "../../../actions/sendMails";
 import axios from "axios";
-import SendMails from "../../../actions/SendMails";
+import SendMails from "../../actions/SendMails";
 
 const Contact = () => {
   const [name, setName] = useState("");

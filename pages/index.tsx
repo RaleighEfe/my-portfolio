@@ -1,12 +1,11 @@
-import Header from "../components/atoms/atoms/Header";
-import SectionLayout from "../components/atoms/organisms/SectionLayout";
-import Hero from "../components/atoms/organisms/Hero";
-import AboutMe from "../components/atoms/organisms/AboutMe";
-import Project from "../components/atoms/organisms/Project";
-import Contact from "../components/atoms/organisms/Contact";
-import Profile from "../components/atoms/atoms/Profile";
-import Footer from "../components/atoms/organisms/Footer";
-import CardSlider from "../components/atoms/atoms/Carousel";
+import Header from "../components/atoms/Header";
+import SectionLayout from "../components/organisms/SectionLayout";
+import Hero from "../components/organisms/Hero";
+import AboutMe from "../components/organisms/AboutMe";
+import Project from "../components/organisms/Project";
+import Contact from "../components/organisms/Contact";
+import Footer from "../components/organisms/Footer";
+
 
 const index = () => {
   return (

@@ -1,6 +1,4 @@
-import Carousel from "../atoms/Carousel";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+
 
 const AboutMe = () => {
   const data = [
